@@ -1,0 +1,9 @@
+# ignore keys, passwords, backups, logs
+*.key
+*.pem
+*.ppk
+secrets.env
+.vscode/
+*.log
+/backups/
+/home/mcserver/.ssh/

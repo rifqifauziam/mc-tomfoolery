@@ -1,0 +1,12 @@
+[Unit]
+Description=Reverse SSH Tunnel for Minecraft Server
+After=network.target
+
+[Service]
+User=mcserver
+ExecStart=/usr/bin/autossh -M 0 -N -o "ServerAliveInterval=30" -o "ServerAliveCountMax=3" -o "ExitOnForwardFailure=yes" -R <remote_port>:localhost:<local_port> <vps_user>@<vps_ip>
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

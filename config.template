@@ -1,0 +1,6 @@
+# Fill this file locally and keep it out of version control
+VPS_USER=<VPS_USER>
+VPS_IP=<VPS_IP>
+VPS_PATH=<VPS_PATH>
+MC_PORT=<MC_PORT>
+REVERSE_SSH_PORT=<REVERSE_SSH_PORT>
